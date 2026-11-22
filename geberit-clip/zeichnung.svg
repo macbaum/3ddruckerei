@@ -28,7 +28,7 @@
 <line x1="10" y1="595" x2="1190" y2="595" stroke="#000"/>
 <text x="35" y="640" font-size="17" font-weight="bold">Teil</text><text x="170" y="640" font-size="17">Distanz-/Höhenclip für Geberit Heberglocke (Spülventil AV02, Glocke 5200.017)</text>
 <text x="35" y="676" font-size="17" font-weight="bold">Maße</text><text x="170" y="676" font-size="17">Ø innen 26 mm (+0,2 Spiel) · Ø außen 33 mm · Höhe 3 mm · Maßstab 5:1, Maße in mm</text>
-<text x="35" y="712" font-size="17" font-weight="bold">WICHTIG</text><text x="170" y="712" font-size="17">Sitzt in der Nut Ø 26 (Rohr Ø 30, Hülse Ø 35). Ø außen 33 < 35. Höhe 3 mm geschätzt – Nutbreite messen!</text>
+<text x="35" y="712" font-size="17" font-weight="bold">WICHTIG</text><text x="170" y="712" font-size="17">Sitzt in der Nut Ø 26 (Rohr Ø 30, Hülse Ø 35). Ø außen 33 &lt; 35. Höhe 3 mm geschätzt – Nutbreite messen!</text>
 <text x="35" y="748" font-size="17" font-weight="bold">Material</text><text x="170" y="748" font-size="17">PETG (wasserfest, zäh) – alternativ PLA; ASA/ABS geht auf dem A1 mini nur eingeschränkt (kein Gehäuse).</text>
 <text x="35" y="784" font-size="17" font-weight="bold">Druck</text><text x="170" y="784" font-size="17">flach liegend, 0,12–0,16 mm Schicht, 4 Wände, 100 % Füllung, keine Stützen.</text>
 <text x="1175" y="825" font-size="13" text-anchor="end" fill="#666">clip_C.stl · halbschalen_2stk.stl · clip.scad</text>
