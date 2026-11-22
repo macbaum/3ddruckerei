@@ -6,11 +6,11 @@ Nur Python-Standardbibliothek noetig.  Masse unten anpassen und erneut ausfuehre
 import math, struct
 
 # ---------------- MASSE (in mm) – bitte am Original nachmessen ----------------
-INNEN_D   = 40.0   # Innendurchmesser = Durchmesser des Rohrs, auf dem der Clip sitzt
-AUSSEN_D  = 48.0   # Aussendurchmesser
-HOEHE     = 5.0    # Hoehe/Dicke (= Abstand, der ueberbrueckt werden soll)
+INNEN_D   = 30.0   # Innendurchmesser = Durchmesser des Rohrs, auf dem der Clip sitzt
+AUSSEN_D  = 36.0   # Aussendurchmesser
+HOEHE     = 3.0    # Hoehe/Dicke (= Abstand, der ueberbrueckt werden soll)
 SPIEL     = 0.2    # Zugabe auf den Innendurchmesser (Druckertoleranz)
-C_WINKEL  = 290.0  # Umschlingungswinkel des C-Clips in Grad (>180 = schnappt ein)
+C_WINKEL  = 240.0  # Umschlingungswinkel des C-Clips in Grad (>180 = schnappt ein)
 FASE      = 0.6    # Fase an den Kanten (erleichtert das Aufschieben)
 SEG       = 180    # Aufloesung (Segmente pro 360 Grad)
 # -----------------------------------------------------------------------------

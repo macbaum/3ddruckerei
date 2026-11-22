@@ -2,12 +2,12 @@
 // Oeffnen mit OpenSCAD (openscad.org) oder MakerWorld "Parametric Model Maker",
 // Werte anpassen, F6 (Render), dann F7 (Export als STL).
 
-innen_d  = 40;   // Innendurchmesser = Rohrdurchmesser [mm]
-aussen_d = 48;   // Aussendurchmesser [mm]
-hoehe    = 5;    // Hoehe / Dicke [mm]
+innen_d  = 30;   // Innendurchmesser = Rohrdurchmesser [mm]
+aussen_d = 36;   // Aussendurchmesser [mm]
+hoehe    = 3;    // Hoehe / Dicke [mm]
 spiel    = 0.2;  // Druckertoleranz auf den Innendurchmesser [mm]
 variante = "C";  // "C" = C-Clip (Schnappclip), "H" = 2 Halbschalen
-c_winkel = 290;  // Umschlingung des C-Clips in Grad (>180 = schnappt ein)
+c_winkel = 240;  // Umschlingung des C-Clips in Grad (>180 = schnappt ein)
 fase     = 0.6;  // Kantenfase [mm]
 
 $fn = 180;

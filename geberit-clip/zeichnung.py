@@ -58,7 +58,7 @@ ty = 640
 A(f'<line x1="10" y1="{ty-45}" x2="1190" y2="{ty-45}" stroke="#000"/>')
 rows = [("Teil","Distanz-/Höhenclip für Geberit Heberglocke (Spülventil AV02, Glocke 5200.017)"),
         ("Maße","Ø innen "+f"{ID:g}"+" mm (+0,2 Spiel) · Ø außen "+f"{OD:g}"+" mm · Höhe "+f"{H:g}"+" mm · Maßstab 5:1, Maße in mm"),
-        ("WICHTIG","Maße sind aus dem Foto geschätzt! Vor dem Druck mit Messschieber nachmessen und in generate.py / clip.scad eintragen."),
+        ("WICHTIG","Ø innen 30 mm gemessen. Ø außen und Höhe geschätzt – Höhe des Spalts nachmessen, ggf. in clip.scad anpassen."),
         ("Material","PETG (wasserfest, zäh) – alternativ PLA; ASA/ABS geht auf dem A1 mini nur eingeschränkt (kein Gehäuse)."),
         ("Druck","flach liegend, 0,12–0,16 mm Schicht, 4 Wände, 100 % Füllung, keine Stützen.")]
 for i,(k,v) in enumerate(rows):

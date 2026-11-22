@@ -12,7 +12,7 @@
 | `zeichnung.svg/.png` | Technische Zeichnung |
 
 ## 1. Zuerst messen (wichtig!)
-Die Maße (Ø innen 40, Ø außen 48, Höhe 5 mm) sind **aus dem Foto geschätzt**. Mit einem Messschieber messen:
+Ø innen = **30 mm (gemessen)**. Ø außen 36 mm und Höhe 3 mm sind **geschätzt** – bitte prüfen:
 1. **Ø innen** = Durchmesser des weißen Rohrs direkt unter dem Ring, wo der Clip sitzen soll.
 2. **Ø außen** = Durchmesser des Rings darüber (der Clip sollte nicht breiter sein).
 3. **Höhe** = Spalt, den der Clip ausfüllen soll (zwischen Ring und Gehäuse, siehe Pfeil).
