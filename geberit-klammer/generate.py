@@ -8,14 +8,14 @@ import math, struct
 # ---------------- MASSE (mm) – aus der Handskizze des Originals ----------------
 HOEHE     = 8.0    # Gesamthoehe (aeusseres Bein)
 BEIN      = 1.0    # Dicke aeusseres Bein
-SCHLITZ   = 1.0    # Schlitzbreite (Becherwand) laut Skizze
-SPIEL     = 0.15   # zusaetzliche Luft im Schlitz
+SCHLITZ   = 0.9    # Schlitzbreite: 0,9 bei 1,0-mm-Wand = Klemmsitz (haelt bei Bewegung)
+SPIEL     = 0.0    # zusaetzliche Luft im Schlitz (0 = Klemmsitz)
 STEG_OBEN = 1.0    # Dicke ueber dem Schlitz (angenommen)
 BEIN_I    = 1.0    # Dicke inneres Bein (angenommen)
 NASE_B    = 3.0    # Breite der Nase ab Aussenkante inneres Bein (inkl. Bein)
 NASE_D    = 1.0    # Dicke der Nase
 TASCHE    = 6.0    # Abstand Oberkante -> Oberseite Nase (Auflage weisses Teil)
-BREITE    = 8.0    # Breite der Klammer (in die Tiefe) – noch nicht gemessen
+BREITE    = 10.0   # Breite der Klammer (in die Tiefe)
 ANZAHL    = 2
 # -----------------------------------------------------------------------------
 

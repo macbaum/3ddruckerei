@@ -8,10 +8,10 @@
 hoehe = 8; // [3:0.1:30]
 // Dicke aeusseres Bein [mm]
 bein = 1; // [0.6:0.1:5]
-// Schlitzbreite = Becherwand [mm]
-schlitz = 1; // [0.3:0.05:5]
+// Schlitzbreite [mm] (0,9 bei 1-mm-Wand = Klemmsitz)
+schlitz = 0.9; // [0.3:0.05:5]
 // zusaetzliche Luft im Schlitz [mm]
-spiel = 0.15; // [0:0.05:1]
+spiel = 0; // [0:0.05:1]
 // Dicke ueber dem Schlitz [mm]
 steg_oben = 1; // [0.6:0.1:5]
 // Dicke inneres Bein [mm]
@@ -23,7 +23,7 @@ nase_d = 1; // [0.6:0.1:5]
 // Abstand Oberkante bis Oberseite Nase [mm]
 tasche = 6; // [1:0.1:29]
 // Breite der Klammer (in die Tiefe) [mm]
-breite = 8; // [2:0.5:30]
+breite = 10; // [2:0.5:30]
 // Anzahl Klammern
 anzahl = 2; // [1:1:8]
 

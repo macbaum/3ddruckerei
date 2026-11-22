@@ -3,11 +3,11 @@
 <rect width="1200" height="850" fill="#fff"/><rect x="10" y="10" width="1180" height="830" fill="none" stroke="#000" stroke-width="2"/>
 <text x="600" y="50" font-size="26" font-weight="bold" text-anchor="middle">Klammer (grünes Teil) – nach Ihrer Skizze</text>
 <text x="600" y="78" font-size="16" text-anchor="middle" fill="#555">Querschnitt, Maßstab 40:1 · Maße in mm</text>
-<rect x="303.0" y="220.0" width="40.0" height="360.0" fill="#eee" stroke="#777" stroke-dasharray="6 3"/>
+<rect x="300.0" y="220.0" width="36.0" height="360.0" fill="#eee" stroke="#777" stroke-dasharray="6 3"/>
 <text x="290.0" y="556.0" font-size="15" fill="#666" text-anchor="end">Becherwand →</text>
-<rect x="392.0" y="132.0" width="68.0" height="288.0" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>
-<text x="478.0" y="156.0" font-size="15" fill="#666">weißes Teil liegt auf der Nase</text>
-<polygon points="260.0,500.0 300.0,500.0 300.0,220.0 346.0,220.0 346.0,460.0 466.0,460.0 466.0,420.0 386.0,420.0 386.0,180.0 260.0,180.0" fill="url(#h)" stroke="#1d7a3a" stroke-width="3"/>
+<rect x="382.0" y="132.0" width="68.0" height="288.0" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>
+<text x="468.0" y="156.0" font-size="15" fill="#666">weißes Teil liegt auf der Nase</text>
+<polygon points="260.0,500.0 300.0,500.0 300.0,220.0 336.0,220.0 336.0,460.0 456.0,460.0 456.0,420.0 376.0,420.0 376.0,180.0 260.0,180.0" fill="url(#h)" stroke="#1d7a3a" stroke-width="3"/>
 <line x1="200.0" y1="500.0" x2="260.0" y2="500.0" stroke="#c00" stroke-width="0.6"/>
 <line x1="200.0" y1="180.0" x2="260.0" y2="180.0" stroke="#c00" stroke-width="0.6"/>
 <line x1="215.0" y1="500.0" x2="215.0" y2="180.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
@@ -17,31 +17,31 @@
 <line x1="260.0" y1="140.0" x2="300.0" y2="140.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
 <text x="280.0" y="130.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="middle">1</text>
 <line x1="300.0" y1="500.0" x2="300.0" y2="560.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="346.0" y1="460.0" x2="346.0" y2="560.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="300.0" y1="550.0" x2="346.0" y2="550.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
-<text x="323.0" y="580.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="middle">1 (+0.15)</text>
-<line x1="466.0" y1="460.0" x2="466.0" y2="620.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="346.0" y1="560.0" x2="346.0" y2="620.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="346.0" y1="610.0" x2="466.0" y2="610.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
-<text x="406.0" y="640.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="middle">3</text>
-<line x1="386.0" y1="180.0" x2="546.0" y2="180.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="466.0" y1="420.0" x2="616.0" y2="420.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="466.0" y1="460.0" x2="616.0" y2="460.0" stroke="#c00" stroke-width="0.6"/>
-<line x1="536.0" y1="180.0" x2="536.0" y2="420.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
-<text x="548.0" y="306.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="start">6</text>
-<line x1="606.0" y1="420.0" x2="606.0" y2="460.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
-<text x="618.0" y="446.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="start">1</text>
-<text x="323.0" y="100.0" font-size="14" fill="#555" text-anchor="middle">innen/außen je nach Einbau</text>
+<line x1="336.0" y1="460.0" x2="336.0" y2="560.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="300.0" y1="550.0" x2="336.0" y2="550.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="346.0" y="556.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="start">0.9 (Wand 1,0)</text>
+<line x1="456.0" y1="460.0" x2="456.0" y2="620.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="336.0" y1="560.0" x2="336.0" y2="620.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="336.0" y1="610.0" x2="456.0" y2="610.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="396.0" y="640.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="middle">3</text>
+<line x1="376.0" y1="180.0" x2="536.0" y2="180.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="456.0" y1="420.0" x2="606.0" y2="420.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="456.0" y1="460.0" x2="606.0" y2="460.0" stroke="#c00" stroke-width="0.6"/>
+<line x1="526.0" y1="180.0" x2="526.0" y2="420.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="538.0" y="306.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="start">6</text>
+<line x1="596.0" y1="420.0" x2="596.0" y2="460.0" stroke="#c00" stroke-width="1.4" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="608.0" y="446.0" font-size="18" fill="#c00" font-weight="bold" text-anchor="start">1</text>
+<text x="318.0" y="100.0" font-size="14" fill="#555" text-anchor="middle">innen/außen je nach Einbau</text>
 <rect x="760" y="130" width="410" height="334" fill="none" stroke="#000"/>
 <text x="775" y="160" font-size="16">Gesamthöhe</text><text x="985" y="160" font-size="16" font-weight="bold">8</text><text x="1160" y="160" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
 <text x="775" y="196" font-size="16">Bein außen</text><text x="985" y="196" font-size="16" font-weight="bold">1</text><text x="1160" y="196" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
-<text x="775" y="232" font-size="16">Schlitz (Becherwand)</text><text x="985" y="232" font-size="16" font-weight="bold">1 + 0.15 Spiel</text><text x="1160" y="232" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
+<text x="775" y="232" font-size="16">Schlitz (Klemmsitz)</text><text x="985" y="232" font-size="16" font-weight="bold">0.9</text><text x="1160" y="232" font-size="13" fill="#2a8a2a" text-anchor="end">gemessen</text>
 <text x="775" y="268" font-size="16">Nase (inkl. inneres Bein)</text><text x="985" y="268" font-size="16" font-weight="bold">3</text><text x="1160" y="268" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
 <text x="775" y="304" font-size="16">Nasendicke</text><text x="985" y="304" font-size="16" font-weight="bold">1</text><text x="1160" y="304" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
 <text x="775" y="340" font-size="16">Tasche über der Nase</text><text x="985" y="340" font-size="16" font-weight="bold">6</text><text x="1160" y="340" font-size="13" fill="#2a8a2a" text-anchor="end">Skizze</text>
 <text x="775" y="376" font-size="16">Steg über dem Schlitz</text><text x="985" y="376" font-size="16" font-weight="bold">1</text><text x="1160" y="376" font-size="13" fill="#b36b00" text-anchor="end">angenommen</text>
 <text x="775" y="412" font-size="16">inneres Bein</text><text x="985" y="412" font-size="16" font-weight="bold">1</text><text x="1160" y="412" font-size="13" fill="#b36b00" text-anchor="end">angenommen</text>
-<text x="775" y="448" font-size="16">Breite (Tiefe)</text><text x="985" y="448" font-size="16" font-weight="bold">8</text><text x="1160" y="448" font-size="13" fill="#c00" text-anchor="end">FEHLT – bitte messen</text>
+<text x="775" y="448" font-size="16">Breite (Tiefe)</text><text x="985" y="448" font-size="16" font-weight="bold">10</text><text x="1160" y="448" font-size="13" fill="#2a8a2a" text-anchor="end">gemessen</text>
 <line x1="10" y1="700" x2="1190" y2="700" stroke="#000"/>
 <text x="35" y="738" font-size="17" font-weight="bold">Druck</text><text x="170" y="738" font-size="17">liegend (Querschnitt flach auf der Platte), PETG, 0,08–0,12 mm Schicht, 0,4-mm-Düse, 100 % Füllung, keine Stützen.</text>
 <text x="35" y="772" font-size="17" font-weight="bold">Hinweis</text><text x="170" y="772" font-size="17">1-mm-Wände sind am Limit (2 Linien à 0,45 mm) – Linienbreite im Slicer ggf. auf 0,42 mm stellen.</text>

@@ -18,7 +18,7 @@ A('<rect width="1200" height="850" fill="#fff"/><rect x="10" y="10" width="1180"
 A('<text x="600" y="50" font-size="26" font-weight="bold" text-anchor="middle">Klammer (grünes Teil) – nach Ihrer Skizze</text>')
 A('<text x="600" y="78" font-size="16" text-anchor="middle" fill="#555">Querschnitt, Maßstab 40:1 · Maße in mm</text>')
 # Becherwand im Schlitz, weisses Teil auf der Nase
-A(f'<rect x="{X(G.BEIN+G.SPIEL/2):.1f}" y="{Y(G.HOEHE-G.STEG_OBEN):.1f}" width="{G.SCHLITZ*S:.1f}" height="{(G.HOEHE-G.STEG_OBEN+2)*S:.1f}" fill="#eee" stroke="#777" stroke-dasharray="6 3"/>')
+A(f'<rect x="{X(G.BEIN):.1f}" y="{Y(G.HOEHE-G.STEG_OBEN):.1f}" width="{(G.SCHLITZ+G.SPIEL)*S:.1f}" height="{(G.HOEHE-G.STEG_OBEN+2)*S:.1f}" fill="#eee" stroke="#777" stroke-dasharray="6 3"/>')
 A(f'<text x="{X(x1)-10:.1f}" y="{Y(-1.4):.1f}" font-size="15" fill="#666" text-anchor="end">Becherwand →</text>')
 A(f'<rect x="{X(x3+0.15):.1f}" y="{Y(G.HOEHE+1.2):.1f}" width="{(xn-x3-0.3)*S:.1f}" height="{(G.HOEHE+1.2-yo)*S:.1f}" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>')
 A(f'<text x="{X(xn)+12:.1f}" y="{Y(G.HOEHE+0.6):.1f}" font-size="15" fill="#666">weißes Teil liegt auf der Nase</text>')
@@ -36,7 +36,7 @@ ext(X(0), Y(G.HOEHE), X(0), Y(G.HOEHE)-50); ext(X(x1), Y(G.HOEHE), X(x1), Y(G.HO
 dim(X(0), Y(G.HOEHE)-40, X(x1), Y(G.HOEHE)-40, f"{G.BEIN:g}", X(x1/2), Y(G.HOEHE)-50)
 # Schlitz (unten)
 ext(X(x1), Y(0), X(x1), Y(0)+60); ext(X(x2), Y(yu), X(x2), Y(0)+60)
-dim(X(x1), Y(0)+50, X(x2), Y(0)+50, f"{G.SCHLITZ:g} (+{G.SPIEL:g})", X((x1+x2)/2), Y(0)+80)
+dim(X(x1), Y(0)+50, X(x2), Y(0)+50, f"{G.SCHLITZ + G.SPIEL:g} (Wand 1,0)", X(x2)+10, Y(0)+56, "start")
 # Nase 3 (unten)
 ext(X(xn), Y(yu), X(xn), Y(0)+120); ext(X(x2), Y(0)+60, X(x2), Y(0)+120)
 dim(X(x2), Y(0)+110, X(xn), Y(0)+110, f"{G.NASE_B:g}", X((x2+xn)/2), Y(0)+140)
@@ -48,11 +48,11 @@ dim(xr + 70, Y(yo), xr + 70, Y(yu), f"{G.NASE_D:g}", xr + 82, Y((yo+yu)/2)+6, "s
 A(f'<text x="{X(x1+s/2):.1f}" y="{Y(G.HOEHE)-80:.1f}" font-size="14" fill="#555" text-anchor="middle">innen/außen je nach Einbau</text>')
 # Tabelle
 rows = [("Gesamthöhe", f"{G.HOEHE:g}", "Skizze"), ("Bein außen", f"{G.BEIN:g}", "Skizze"),
-        ("Schlitz (Becherwand)", f"{G.SCHLITZ:g} + {G.SPIEL:g} Spiel", "Skizze"),
+        ("Schlitz (Klemmsitz)", f"{G.SCHLITZ + G.SPIEL:g}", "gemessen"),
         ("Nase (inkl. inneres Bein)", f"{G.NASE_B:g}", "Skizze"), ("Nasendicke", f"{G.NASE_D:g}", "Skizze"),
         ("Tasche über der Nase", f"{G.TASCHE:g}", "Skizze"),
         ("Steg über dem Schlitz", f"{G.STEG_OBEN:g}", "angenommen"), ("inneres Bein", f"{G.BEIN_I:g}", "angenommen"),
-        ("Breite (Tiefe)", f"{G.BREITE:g}", "FEHLT – bitte messen")]
+        ("Breite (Tiefe)", f"{G.BREITE:g}", "gemessen")]
 y0 = 130
 A(f'<rect x="760" y="{y0}" width="410" height="{36*len(rows)+10}" fill="none" stroke="#000"/>')
 for i, (k, v, q) in enumerate(rows):
