@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c00"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#1a5fd0"/></marker></defs>
+<rect width="1200" height="900" fill="#fff"/><rect x="10" y="10" width="1180" height="880" fill="none" stroke="#000" stroke-width="2"/>
+<text x="600" y="55" font-size="26" font-weight="bold" text-anchor="middle">Messskizze – Clip Geberit Heberglocke (Seitenansicht)</text>
+<text x="600" y="85" font-size="16" text-anchor="middle" fill="#555">Bitte die rot markierten Maße B, C, D mit dem Messschieber messen</text>
+<!-- Rohr oben -->
+<rect x="250" y="120" width="300" height="230" fill="#f2f2f2" stroke="#000" stroke-width="2"/>
+<text x="400" y="190" font-size="18" text-anchor="middle" fill="#777">Heberglocke (Rohr)</text>
+<!-- Kragen -->
+<rect x="200" y="350" width="400" height="70" fill="#e6e6e6" stroke="#000" stroke-width="2"/>
+<text x="400" y="392" font-size="18" text-anchor="middle" fill="#555">Kragen / Ring</text>
+<!-- Rohr im Spalt -->
+<rect x="250" y="420" width="300" height="60" fill="#f2f2f2" stroke="#000" stroke-width="2"/>
+<!-- Clip (geschnitten) -->
+<rect x="215" y="420" width="35" height="60" fill="#9cc0ff" stroke="#1a5fd0" stroke-width="2"/>
+<rect x="550" y="420" width="35" height="60" fill="#9cc0ff" stroke="#1a5fd0" stroke-width="2"/>
+<text x="140" y="456" font-size="18" fill="#1a5fd0" font-weight="bold" text-anchor="middle">CLIP</text>
+<line x1="165" y1="450" x2="212" y2="450" stroke="#1a5fd0" stroke-width="2" marker-end="url(#b)"/>
+<!-- Gehäuse unten -->
+<rect x="180" y="480" width="440" height="160" fill="#e6e6e6" stroke="#000" stroke-width="2"/>
+<text x="400" y="570" font-size="18" text-anchor="middle" fill="#555">Spülventil-Gehäuse</text>
+<line x1="400" y1="105" x2="400" y2="660" stroke="#555" stroke-dasharray="12 4 2 4"/>
+<!-- A -->
+<line x1="250" y1="270" x2="550" y2="270" stroke="#2a8a2a" stroke-width="2"/>
+<text x="400" y="260" font-size="22" font-weight="bold" fill="#2a8a2a" text-anchor="middle">A = Ø 30 ✓</text>
+<!-- B -->
+<line x1="200" y1="335" x2="200" y2="350" stroke="#c00"/><line x1="600" y1="335" x2="600" y2="350" stroke="#c00"/>
+<line x1="200" y1="335" x2="600" y2="335" stroke="#c00" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="400" y="327" font-size="22" font-weight="bold" fill="#c00" text-anchor="middle">B = Ø Kragen</text>
+<!-- C -->
+<line x1="600" y1="420" x2="700" y2="420" stroke="#c00"/><line x1="620" y1="480" x2="700" y2="480" stroke="#c00"/>
+<line x1="690" y1="420" x2="690" y2="480" stroke="#c00" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="705" y="445" font-size="22" font-weight="bold" fill="#c00">C =</text><text x="705" y="472" font-size="18" font-weight="bold" fill="#c00">Höhe Spalt</text>
+<!-- D -->
+<line x1="215" y1="480" x2="215" y2="700" stroke="#c00" stroke-dasharray="4 3"/><line x1="585" y1="480" x2="585" y2="700" stroke="#c00" stroke-dasharray="4 3"/>
+<line x1="215" y1="690" x2="585" y2="690" stroke="#c00" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="400" y="720" font-size="22" font-weight="bold" fill="#c00" text-anchor="middle">D = Ø außen Clip (max.)</text>
+<!-- Tabelle -->
+<g font-size="18">
+<text x="780" y="150" font-size="22" font-weight="bold">Maße eintragen</text>
+<rect x="780" y="165" width="380" height="250" fill="none" stroke="#000"/>
+<line x1="780" y1="215" x2="1160" y2="215" stroke="#000"/><line x1="780" y1="265" x2="1160" y2="265" stroke="#000"/>
+<line x1="780" y1="315" x2="1160" y2="315" stroke="#000"/><line x1="780" y1="365" x2="1160" y2="365" stroke="#000"/>
+<line x1="1060" y1="165" x2="1060" y2="415" stroke="#000"/>
+<text x="795" y="197" fill="#2a8a2a" font-weight="bold">A  Ø Rohr am Clip</text><text x="1075" y="197" fill="#2a8a2a" font-weight="bold">30 mm</text>
+<text x="795" y="247" fill="#c00" font-weight="bold">B  Ø Kragen</text><text x="1075" y="247">___ mm</text>
+<text x="795" y="297" fill="#c00" font-weight="bold">C  Höhe Spalt</text><text x="1075" y="297">___ mm</text>
+<text x="795" y="347" fill="#c00" font-weight="bold">D  Ø außen Clip</text><text x="1075" y="347">___ mm</text>
+<text x="795" y="397" fill="#555">(Original-Clip falls vorhanden)</text>
+</g>
+<g font-size="16" fill="#333">
+<text x="780" y="510" font-weight="bold" font-size="18">So messen:</text>
+<text x="780" y="540">A  Rohr direkt im Spalt (Messschieber außen) – erledigt</text>
+<text x="780" y="568">B  größter Ø des Kragens über dem Clip</text>
+<text x="780" y="596">C  Abstand Unterkante Kragen → Oberkante</text>
+<text x="800" y="620">Gehäuse (Tiefenmaß des Messschiebers)</text>
+<text x="780" y="648">D  wenn ein alter Clip da ist: dessen Ø außen;</text>
+<text x="800" y="672">sonst: so groß wie B (bündig) oder etwas kleiner</text>
+<text x="780" y="710">Optional: Dicke des alten Clips (= C) und Breite</text>
+<text x="800" y="734">der Öffnung beim C-Clip.</text>
+</g>
+<text x="600" y="790" font-size="16" text-anchor="middle" fill="#555">Skizze nicht maßstäblich · Clip blau geschnitten dargestellt</text>
+<text x="600" y="820" font-size="16" text-anchor="middle" fill="#555">Maße B, C, D zurückmelden → STL wird passend neu erzeugt</text>
+</svg>
