@@ -5,14 +5,14 @@
 ## Dateien
 | Datei | Inhalt |
 |---|---|
-| `clip_C.stl` | Variante A: C-Clip aus einem Teil, wird seitlich auf das Rohr geschnappt |
+| `ring.stl` | Klickring (geschlossen) mit Innennut – wird auf den geschlitzten Wulst Ø 30 gedrückt |
 | `halbschalen_2stk.stl` | Variante B: zwei Halbschalen (wie im eBay-Angebot), ein Druckvorgang |
 | `clip.scad` | Parametrisches Modell für OpenSCAD / MakerWorld „Parametric Model Maker" |
 | `generate.py` | Erzeugt die STL-Dateien neu (nur Python nötig) |
 | `zeichnung.svg/.png` | Technische Zeichnung |
 
 ## 1. Zuerst messen (wichtig!)
-Der Ring sitzt auf dem Rohr Ø 30 (gemessen) und klickt mit einer Innenrippe in die Nut hinter dem Wulst. Nut-Ø, Nutbreite, Ø außen und Höhe sind **geschätzt** – siehe `messskizze.png`:
+Der Ring hat innen eine Nut und wird auf den geschlitzten Wulst Ø 30 (gemessen) gedrückt; der Wulst federt ein und schnappt in die Nut. Rohr-Ø neben dem Wulst, Wulstbreite, Ø außen und Höhe sind **geschätzt** – siehe `messskizze.png`:
 1. **Ø innen** = Durchmesser des weißen Rohrs direkt unter dem Ring, wo der Clip sitzen soll.
 2. **Ø außen** = Durchmesser des Rings darüber (der Clip sollte nicht breiter sein).
 3. **Höhe** = Spalt, den der Clip ausfüllen soll (zwischen Ring und Gehäuse, siehe Pfeil).
@@ -27,7 +27,7 @@ Tipp: Erst einen Testclip drucken (dauert nur ~10 min) und anprobieren. Sitzt er
 ## 2. In Bambu Studio importieren
 1. **Bambu Studio** öffnen (kostenlos, bambulab.com). Beim ersten Start Drucker **A1 mini** und Düse **0,4 mm** wählen.
 2. Oben links Drucker = *Bambu Lab A1 mini*, Platte = *Textured PEI Plate* (bzw. deine Platte).
-3. **Datei → Importieren → 3MF/STL/… importieren** (Strg+I) und `clip_C.stl` oder `halbschalen_2stk.stl` auswählen – oder die Datei einfach ins Fenster ziehen.
+3. **Datei → Importieren → 3MF/STL/… importieren** (Strg+I) und `ring.stl` oder `halbschalen_2stk.stl` auswählen – oder die Datei einfach ins Fenster ziehen.
 4. Das Teil liegt automatisch flach auf der Platte (Ring liegt waagerecht – so lassen!). Falls nicht: Teil anklicken → Taste **F** („Auf Fläche legen") → untere Fläche anklicken.
 5. Mehrere Ersatzteile? Rechtsklick → **Klonen** (z. B. 3 Stück) → Taste **A** (Anordnen).
 
