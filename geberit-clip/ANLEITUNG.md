@@ -12,7 +12,7 @@
 | `zeichnung.svg/.png` | Technische Zeichnung |
 
 ## 1. Zuerst messen (wichtig!)
-Gemessen: Nut Ø 26 (Clip-Sitz), Rohr Ø 30, Hülse Ø 35 → Clip Ø 26 innen / Ø 33 außen. Höhe 3 mm ist **geschätzt** – bitte prüfen:
+Der Ring sitzt auf dem Rohr Ø 30 (gemessen) und klickt mit einer Innenrippe in die Nut hinter dem Wulst. Nut-Ø, Nutbreite, Ø außen und Höhe sind **geschätzt** – siehe `messskizze.png`:
 1. **Ø innen** = Durchmesser des weißen Rohrs direkt unter dem Ring, wo der Clip sitzen soll.
 2. **Ø außen** = Durchmesser des Rings darüber (der Clip sollte nicht breiter sein).
 3. **Höhe** = Spalt, den der Clip ausfüllen soll (zwischen Ring und Gehäuse, siehe Pfeil).
