@@ -8,12 +8,12 @@
 <rect x="337" y="380" width="30" height="250" fill="#eee" stroke="#777" stroke-width="1.5" stroke-dasharray="6 3"/>
 <text x="352" y="655" font-size="15" fill="#666" text-anchor="middle">Becherwand</text>
 <!-- Klammer: steg=2 (30px) s=2.3 (34.5) beinA=12 (180) beinI=8 (120) oben=4 (60); origin x=300,y=560 bottom -->
-<polygon points="300,560 330,560 330,380 364.5,380 364.5,500 394.5,500 394.5,320 300,320" fill="url(#h)" stroke="#1d7a3a" stroke-width="2.5"/>
+<polygon points="300,560 330,560 330,380 364.5,380 364.5,500 394.5,500 394.5,350 439.5,350 439.5,320 300,320" fill="url(#h)" stroke="#1d7a3a" stroke-width="2.5"/>
 <text x="300" y="305" font-size="16" fill="#1d7a3a" font-weight="bold" text-anchor="middle">Klammer</text>
 <text x="230" y="470" font-size="15" fill="#555" text-anchor="end">außen</text><text x="470" y="470" font-size="15" fill="#555">innen</text>
 <!-- Kragen -->
-<rect x="364" y="290" width="160" height="30" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>
-<text x="402" y="345" font-size="14" fill="#666">↑ Kragen des Rohrs liegt auf</text>
+<rect x="400" y="290" width="170" height="30" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>
+<text x="470" y="280" font-size="14" fill="#666">Kragen liegt auf der Nase ↓</text><line x1="394.5" y1="250" x2="394.5" y2="345" stroke="#c00" stroke-width="0.7"/><line x1="439.5" y1="250" x2="439.5" y2="285" stroke="#c00" stroke-width="0.7"/><line x1="394.5" y1="262" x2="439.5" y2="262" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><text x="417" y="248" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">N</text><text x="450" y="342" font-size="14" fill="#1d7a3a">Nase</text>
 <!-- Masse -->
 <line x1="330" y1="400" x2="364.5" y2="400" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
 <text x="347" y="430" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">S</text>
@@ -32,21 +32,21 @@
 <text x="700" y="620" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">B</text>
 <!-- Tabelle -->
 <g font-size="17">
-<rect x="830" y="120" width="340" height="335" fill="none" stroke="#000"/>
-<g stroke="#000"><line x1="830" y1="168" x2="1170" y2="168"/><line x1="830" y1="216" x2="1170" y2="216"/><line x1="830" y1="264" x2="1170" y2="264"/><line x1="830" y1="312" x2="1170" y2="312"/><line x1="830" y1="360" x2="1170" y2="360"/><line x1="830" y1="408" x2="1170" y2="408"/><line x1="1050" y1="120" x2="1050" y2="455"/></g>
+<rect x="830" y="120" width="340" height="383" fill="none" stroke="#000"/>
+<g stroke="#000"><line x1="830" y1="168" x2="1170" y2="168"/><line x1="830" y1="216" x2="1170" y2="216"/><line x1="830" y1="264" x2="1170" y2="264"/><line x1="830" y1="312" x2="1170" y2="312"/><line x1="830" y1="360" x2="1170" y2="360"/><line x1="830" y1="408" x2="1170" y2="408"/><line x1="1050" y1="120" x2="1050" y2="456"/><line x1="830" y1="456" x2="1170" y2="456"/></g>
 <text x="842" y="152" font-weight="bold" fill="#c00">S  Wandstärke Becher</text><text x="1060" y="152">2,0 → ___</text>
 <text x="842" y="200" font-weight="bold" fill="#c00">B  Breite</text><text x="1060" y="200">8 → ___</text>
 <text x="842" y="248" font-weight="bold" fill="#c00">O  Dicke über Rand</text><text x="1060" y="248">4 → ___</text>
 <text x="842" y="296" font-weight="bold" fill="#c00">A  Bein außen</text><text x="1060" y="296">12 → ___</text>
 <text x="842" y="344" font-weight="bold" fill="#c00">I  Bein innen</text><text x="1060" y="344">8 → ___</text>
 <text x="842" y="392" font-weight="bold" fill="#c00">T  Dicke Beine</text><text x="1060" y="392">2 → ___</text>
-<text x="842" y="440" fill="#555">alle Maße in mm</text>
+<text x="842" y="440" font-weight="bold" fill="#c00">N  Überstand Nase</text><text x="1060" y="440">3 → ___</text><text x="842" y="488" fill="#555">alle Maße in mm (Nasendicke 2)</text>
 </g>
 <g font-size="16" fill="#333">
-<text x="830" y="500" font-weight="bold" font-size="18">Wichtigste Maße:</text>
-<text x="830" y="528">S – Becherrand mit Messschieber messen</text>
-<text x="830" y="554">O – bestimmt, wie hoch das Rohr steht</text>
-<text x="845" y="576">(am Original messen, falls vorhanden)</text>
+<text x="830" y="540" font-weight="bold" font-size="18">Wichtigste Maße:</text>
+<text x="830" y="568">S – Becherrand mit Messschieber messen</text>
+<text x="830" y="594">O – bestimmt, wie hoch das Rohr steht</text>
+<text x="845" y="616">(am Original messen, falls vorhanden)</text>
 </g>
 <line x1="10" y1="670" x2="1190" y2="670" stroke="#000"/>
 <g font-size="17">

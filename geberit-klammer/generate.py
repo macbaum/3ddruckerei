@@ -13,6 +13,8 @@ OBEN      = 4.0    # Dicke ueber dem Rand = Abstandshoehe fuer den Kragen
 BEIN_A    = 12.0   # Laenge aeusseres Bein (ab Rand nach unten)
 BEIN_I    = 8.0    # Laenge inneres Bein (ab Rand nach unten)
 STEG      = 2.0    # Dicke der Beine
+NASE_L    = 3.0    # wie weit die Nase nach innen uebersteht (Auflage fuer den Kragen)
+NASE_H    = 2.0    # Dicke der Nase
 ANZAHL    = 2
 # -----------------------------------------------------------------------------
 
@@ -20,8 +22,15 @@ ANZAHL    = 2
 def profil():
     s = WAND + SPIEL
     t = STEG
-    return [(0, 0), (t, 0), (t, BEIN_A), (t + s, BEIN_A), (t + s, BEIN_A - BEIN_I),
-            (2 * t + s, BEIN_A - BEIN_I), (2 * t + s, BEIN_A + OBEN), (0, BEIN_A + OBEN)]
+    top = BEIN_A + OBEN
+    xi = 2 * t + s
+    nh = min(NASE_H, top - (BEIN_A - BEIN_I))
+    pts = [(0, 0), (t, 0), (t, BEIN_A), (t + s, BEIN_A), (t + s, BEIN_A - BEIN_I), (xi, BEIN_A - BEIN_I)]
+    if NASE_L > 0:
+        pts += [(xi, top - nh), (xi + NASE_L, top - nh), (xi + NASE_L, top)]
+    else:
+        pts += [(xi, top)]
+    return pts + [(0, top)]
 
 
 def earclip(poly):

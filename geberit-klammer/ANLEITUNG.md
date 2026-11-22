@@ -3,7 +3,7 @@
 ![Skizze](skizze.png)
 
 Die zwei grünen U-Klammern werden über den Rand des Gehäusebechers gesteckt.
-Der Kragen des Rohrs liegt oben auf ihnen auf; ihre Dicke **O** bestimmt also die Höhe des Rohrs.
+Oben steht innen eine **Nase** über, auf der der weiße Kragen des Rohrs aufliegt; die Dicke **O** bestimmt also die Höhe des Rohrs.
 
 ## Dateien
 - `klammer_2stk.stl` – 2 Klammern, fertig zum Drucken (Standardmaße, geschätzt)
@@ -19,6 +19,7 @@ Der Kragen des Rohrs liegt oben auf ihnen auf; ihre Dicke **O** bestimmt also di
 | A | Bein außen | 12 mm |
 | I | Bein innen | 8 mm |
 | T | Dicke der Beine | 2 mm |
+| N | Überstand der Nase nach innen (Auflage für den Kragen) | 3 mm (Dicke 2 mm) |
 
 ## Drucken (Bambu Studio / MakerWorld)
 1. `klammer_2stk.stl` importieren – die Klammern liegen bereits flach (Profil auf der Platte).
