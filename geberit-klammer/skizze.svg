@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" font-family="Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#c00"/></marker>
+<pattern id="h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#1d7a3a" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="850" fill="#fff"/><rect x="10" y="10" width="1180" height="830" fill="none" stroke="#000" stroke-width="2"/>
+<text x="600" y="52" font-size="26" font-weight="bold" text-anchor="middle">U-Klammer (grünes Teil) – Zeichnung &amp; Messskizze</text>
+<text x="600" y="80" font-size="16" text-anchor="middle" fill="#555">Seitenansicht (Schnitt), Maßstab 15:1 · Werte geschätzt – bitte am Original messen</text>
+<!-- Becherwand -->
+<rect x="337" y="380" width="30" height="250" fill="#eee" stroke="#777" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="352" y="655" font-size="15" fill="#666" text-anchor="middle">Becherwand</text>
+<!-- Klammer: steg=2 (30px) s=2.3 (34.5) beinA=12 (180) beinI=8 (120) oben=4 (60); origin x=300,y=560 bottom -->
+<polygon points="300,560 330,560 330,380 364.5,380 364.5,500 394.5,500 394.5,320 300,320" fill="url(#h)" stroke="#1d7a3a" stroke-width="2.5"/>
+<text x="300" y="305" font-size="16" fill="#1d7a3a" font-weight="bold" text-anchor="middle">Klammer</text>
+<text x="230" y="470" font-size="15" fill="#555" text-anchor="end">außen</text><text x="470" y="470" font-size="15" fill="#555">innen</text>
+<!-- Kragen -->
+<rect x="364" y="290" width="160" height="30" fill="#f4efe0" stroke="#777" stroke-dasharray="6 3"/>
+<text x="402" y="345" font-size="14" fill="#666">↑ Kragen des Rohrs liegt auf</text>
+<!-- Masse -->
+<line x1="330" y1="400" x2="364.5" y2="400" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="347" y="430" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">S</text>
+<line x1="255" y1="320" x2="255" y2="380" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><line x1="250" y1="380" x2="330" y2="380" stroke="#c00" stroke-width="0.7"/>
+<text x="245" y="358" font-size="18" font-weight="bold" fill="#c00" text-anchor="end">O</text>
+<line x1="270" y1="380" x2="270" y2="560" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><line x1="265" y1="560" x2="300" y2="560" stroke="#c00" stroke-width="0.7"/>
+<text x="260" y="530" font-size="18" font-weight="bold" fill="#c00" text-anchor="end">A</text>
+<line x1="425" y1="380" x2="425" y2="500" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/><line x1="364" y1="380" x2="430" y2="380" stroke="#c00" stroke-width="0.7"/><line x1="394" y1="500" x2="430" y2="500" stroke="#c00" stroke-width="0.7"/>
+<text x="435" y="445" font-size="18" font-weight="bold" fill="#c00">I</text>
+<line x1="300" y1="590" x2="330" y2="590" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="315" y="620" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">T</text>
+<!-- Vorderansicht Breite -->
+<text x="700" y="300" font-size="16" font-weight="bold" text-anchor="middle">Ansicht von außen</text>
+<rect x="640" y="320" width="120" height="240" fill="url(#h)" stroke="#1d7a3a" stroke-width="2.5"/>
+<line x1="640" y1="590" x2="760" y2="590" stroke="#c00" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+<text x="700" y="620" font-size="18" font-weight="bold" fill="#c00" text-anchor="middle">B</text>
+<!-- Tabelle -->
+<g font-size="17">
+<rect x="830" y="120" width="340" height="335" fill="none" stroke="#000"/>
+<g stroke="#000"><line x1="830" y1="168" x2="1170" y2="168"/><line x1="830" y1="216" x2="1170" y2="216"/><line x1="830" y1="264" x2="1170" y2="264"/><line x1="830" y1="312" x2="1170" y2="312"/><line x1="830" y1="360" x2="1170" y2="360"/><line x1="830" y1="408" x2="1170" y2="408"/><line x1="1050" y1="120" x2="1050" y2="455"/></g>
+<text x="842" y="152" font-weight="bold" fill="#c00">S  Wandstärke Becher</text><text x="1060" y="152">2,0 → ___</text>
+<text x="842" y="200" font-weight="bold" fill="#c00">B  Breite</text><text x="1060" y="200">8 → ___</text>
+<text x="842" y="248" font-weight="bold" fill="#c00">O  Dicke über Rand</text><text x="1060" y="248">4 → ___</text>
+<text x="842" y="296" font-weight="bold" fill="#c00">A  Bein außen</text><text x="1060" y="296">12 → ___</text>
+<text x="842" y="344" font-weight="bold" fill="#c00">I  Bein innen</text><text x="1060" y="344">8 → ___</text>
+<text x="842" y="392" font-weight="bold" fill="#c00">T  Dicke Beine</text><text x="1060" y="392">2 → ___</text>
+<text x="842" y="440" fill="#555">alle Maße in mm</text>
+</g>
+<g font-size="16" fill="#333">
+<text x="830" y="500" font-weight="bold" font-size="18">Wichtigste Maße:</text>
+<text x="830" y="528">S – Becherrand mit Messschieber messen</text>
+<text x="830" y="554">O – bestimmt, wie hoch das Rohr steht</text>
+<text x="845" y="576">(am Original messen, falls vorhanden)</text>
+</g>
+<line x1="10" y1="670" x2="1190" y2="670" stroke="#000"/>
+<g font-size="17">
+<text x="35" y="710" font-weight="bold">Druck</text><text x="170" y="710">liegend (Profil flach auf der Platte), PETG, 0,12–0,16 mm, 4 Wände, 100 % Füllung, keine Stützen.</text>
+<text x="35" y="745" font-weight="bold">Datei</text><text x="170" y="745">klammer_2stk.stl (2 Stück) · klammer.scad zum Anpassen (MakerWorld Parametric Model Maker)</text>
+<text x="35" y="780" font-weight="bold">Tipp</text><text x="170" y="780">Ist der Schlitz zu stramm: „spiel“ erhöhen. Höhe O bestimmt die Position des Rohrs – ggf. 2–3 Varianten drucken.</text>
+</g>
+</svg>
