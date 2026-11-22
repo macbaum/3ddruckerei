@@ -1,44 +1,44 @@
-// U-Klammer (gruenes Teil) fuer Geberit Heberglocke AV02 / 5200.017 - parametrisch
-// Wird ueber den Rand des Gehaeusebechers gesteckt; der Kragen des Rohrs liegt oben auf.
+// Klammer (gruenes Teil) fuer Geberit Heberglocke AV02 / 5200.017 - parametrisch
+// Masse aus der Handskizze des Originals. Umgedrehtes U (Schlitz fuer die Becherwand)
+// mit Nase unten innen; das weisse Teil liegt in der Tasche auf der Nase auf.
 // MakerWorld: "Parametric Model Maker" -> diese Datei hochladen.
 
 /* [Masse] */
-// Wandstaerke des Becherrands [mm]
-wand = 2.0; // [0.5:0.1:6]
-// Luft im Schlitz [mm]
-spiel = 0.3; // [0:0.05:1]
-// Breite der Klammer entlang des Rands [mm]
-breite = 8; // [3:0.5:30]
-// Dicke ueber dem Rand = Abstandshoehe [mm]
-oben = 4; // [1:0.1:20]
-// Laenge aeusseres Bein [mm]
-bein_a = 12; // [2:0.5:40]
-// Laenge inneres Bein [mm]
-bein_i = 8; // [0:0.5:40]
-// Dicke der Beine [mm]
-steg = 2; // [1:0.1:5]
-// wie weit die Nase nach innen uebersteht [mm]
-nase_l = 3; // [0:0.5:15]
+// Gesamthoehe [mm]
+hoehe = 8; // [3:0.1:30]
+// Dicke aeusseres Bein [mm]
+bein = 1; // [0.6:0.1:5]
+// Schlitzbreite = Becherwand [mm]
+schlitz = 1; // [0.3:0.05:5]
+// zusaetzliche Luft im Schlitz [mm]
+spiel = 0.15; // [0:0.05:1]
+// Dicke ueber dem Schlitz [mm]
+steg_oben = 1; // [0.6:0.1:5]
+// Dicke inneres Bein [mm]
+bein_i = 1; // [0.6:0.1:5]
+// Breite Nase ab Aussenkante inneres Bein (inkl. Bein) [mm]
+nase_b = 3; // [1:0.1:15]
 // Dicke der Nase [mm]
-nase_h = 2; // [0.5:0.1:10]
+nase_d = 1; // [0.6:0.1:5]
+// Abstand Oberkante bis Oberseite Nase [mm]
+tasche = 6; // [1:0.1:29]
+// Breite der Klammer (in die Tiefe) [mm]
+breite = 8; // [2:0.5:30]
 // Anzahl Klammern
 anzahl = 2; // [1:1:8]
 
 /* [Hidden] */
-s = wand + spiel;
-xi = 2 * steg + s;
-top = bein_a + oben;
-nh = min(nase_h, top - (bein_a - bein_i));
-w = xi + nase_l;
+s  = schlitz + spiel;
+x1 = bein; x2 = bein + s; x3 = bein + s + bein_i; xn = bein + s + nase_b;
+yo = hoehe - tasche;
+yu = max(0, yo - nase_d);
+ys = hoehe - steg_oben;
 
 module profil() {
-    polygon(concat(
-        [[0, 0], [steg, 0], [steg, bein_a], [steg + s, bein_a], [steg + s, bein_a - bein_i],
-         [xi, bein_a - bein_i]],
-        nase_l > 0 ? [[xi, top - nh], [xi + nase_l, top - nh], [xi + nase_l, top]] : [[xi, top]],
-        [[0, top]]));
+    polygon([[0, 0], [x1, 0], [x1, ys], [x2, ys], [x2, yu], [xn, yu], [xn, yo],
+             [x3, yo], [x3, hoehe], [0, hoehe]]);
 }
 
-// liegend gedruckt: Profil in XY, Breite in Z
+// liegend gedruckt: Profil flach in XY, Breite in Z
 for (k = [0 : anzahl - 1])
-    translate([k * (w + 5), 0, 0]) linear_extrude(height = breite) profil();
+    translate([k * (xn + 4), 0, 0]) linear_extrude(height = breite) profil();

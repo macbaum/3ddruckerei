@@ -5,32 +5,31 @@ Erzeugt klammer_2stk.stl (2 Stueck, liegend gedruckt).   python3 generate.py
 """
 import math, struct
 
-# ---------------- MASSE (mm) – alle geschaetzt, bitte messen ----------------
-WAND      = 2.0    # Wandstaerke des Becherrands (Schlitz = WAND + SPIEL)
-SPIEL     = 0.3    # Luft im Schlitz
-BREITE    = 8.0    # Breite der Klammer (entlang des Rands)
-OBEN      = 4.0    # Dicke ueber dem Rand = Abstandshoehe fuer den Kragen
-BEIN_A    = 12.0   # Laenge aeusseres Bein (ab Rand nach unten)
-BEIN_I    = 8.0    # Laenge inneres Bein (ab Rand nach unten)
-STEG      = 2.0    # Dicke der Beine
-NASE_L    = 3.0    # wie weit die Nase nach innen uebersteht (Auflage fuer den Kragen)
-NASE_H    = 2.0    # Dicke der Nase
+# ---------------- MASSE (mm) – aus der Handskizze des Originals ----------------
+HOEHE     = 8.0    # Gesamthoehe (aeusseres Bein)
+BEIN      = 1.0    # Dicke aeusseres Bein
+SCHLITZ   = 1.0    # Schlitzbreite (Becherwand) laut Skizze
+SPIEL     = 0.15   # zusaetzliche Luft im Schlitz
+STEG_OBEN = 1.0    # Dicke ueber dem Schlitz (angenommen)
+BEIN_I    = 1.0    # Dicke inneres Bein (angenommen)
+NASE_B    = 3.0    # Breite der Nase ab Aussenkante inneres Bein (inkl. Bein)
+NASE_D    = 1.0    # Dicke der Nase
+TASCHE    = 6.0    # Abstand Oberkante -> Oberseite Nase (Auflage weisses Teil)
+BREITE    = 8.0    # Breite der Klammer (in die Tiefe) – noch nicht gemessen
 ANZAHL    = 2
 # -----------------------------------------------------------------------------
 
 
 def profil():
-    s = WAND + SPIEL
-    t = STEG
-    top = BEIN_A + OBEN
-    xi = 2 * t + s
-    nh = min(NASE_H, top - (BEIN_A - BEIN_I))
-    pts = [(0, 0), (t, 0), (t, BEIN_A), (t + s, BEIN_A), (t + s, BEIN_A - BEIN_I), (xi, BEIN_A - BEIN_I)]
-    if NASE_L > 0:
-        pts += [(xi, top - nh), (xi + NASE_L, top - nh), (xi + NASE_L, top)]
-    else:
-        pts += [(xi, top)]
-    return pts + [(0, top)]
+    """Querschnitt, gegen den Uhrzeigersinn. y=0 = Unterkante aeusseres Bein."""
+    s = SCHLITZ + SPIEL
+    x1, x2, x3 = BEIN, BEIN + s, BEIN + s + BEIN_I
+    xn = BEIN + s + NASE_B
+    y_nase_oben = HOEHE - TASCHE
+    y_nase_unten = max(0.0, y_nase_oben - NASE_D)
+    y_schlitz = HOEHE - STEG_OBEN
+    return [(0, 0), (x1, 0), (x1, y_schlitz), (x2, y_schlitz), (x2, y_nase_unten),
+            (xn, y_nase_unten), (xn, y_nase_oben), (x3, y_nase_oben), (x3, HOEHE), (0, HOEHE)]
 
 
 def earclip(poly):
